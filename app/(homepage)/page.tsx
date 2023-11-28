@@ -13,6 +13,7 @@ export default function Homepage() {
         {modelContent &&
           modelContent.map((product: ProductType) => (
             <ProductCard
+              key={product.productId}
               productId={product.productId}
               productName={product.productName}
               price={product.price}
