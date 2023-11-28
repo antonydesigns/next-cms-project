@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { AuthStore } from "../login/configs/store";
 
 export default function LoginLogout() {

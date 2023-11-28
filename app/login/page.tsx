@@ -1,11 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { AuthStore } from "@/app/login/configs/store";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
   const loggedIn = AuthStore((store) => store.loggedIn);
   const setLoggedIn = AuthStore((store) => store.setLoggedIn);
   const [value, setValue] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
     if (value === process.env.NEXT_PUBLIC_CODE) {
@@ -14,6 +16,7 @@ export default function Login() {
         "key",
         JSON.stringify(process.env.NEXT_PUBLIC_CODE)
       );
+      router.push("/");
     }
   }, [value]);
 
