@@ -1,7 +1,0 @@
-{
-  "hosting": {
-    "public": "out",
-    "site": "nextcmsproject",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-  }
-}
