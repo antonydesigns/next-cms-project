@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { AuthStore } from "../login/configs/store";
 
 export default function LoginLogout() {
@@ -9,7 +9,13 @@ export default function LoginLogout() {
   return (
     <>
       {loggedIn ? (
-        <div onClick={() => setLoggedIn(false)}>Logout</div>
+        <div
+          onClick={() => {
+            setLoggedIn(false);
+          }}
+        >
+          Logout
+        </div>
       ) : (
         <div>Login</div>
       )}

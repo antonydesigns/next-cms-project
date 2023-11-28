@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./(components)/Navbar";
+import CheckIfLoggedIn from "./(components)/CheckIfLoggedIn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <CheckIfLoggedIn />
         <div className="bg-[#172024] text-[#ffffffbf] min-h-[100vh]">
           <Navbar />
           <div className="py-3 pl-3">{children}</div>
