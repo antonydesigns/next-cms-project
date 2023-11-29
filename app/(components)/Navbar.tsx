@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import LoginLogout from "./LoginLogout";
 import AdminLinks from "./AdminLinks";
-import { AuthStore } from "../login/configs/store";
 
 export default function Navbar() {
   return (
