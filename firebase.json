@@ -1,7 +1,10 @@
 {
   "hosting": {
     "public": "out",
-    "site": "webstore-cms",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }
