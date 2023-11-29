@@ -11,6 +11,9 @@ export default function Navbar() {
           <Link href="/" className="underline mx-4 ml-0">
             Home
           </Link>
+          <Link href="/products" className="underline mx-4 ml-0">
+            Products
+          </Link>
           <AdminLinks />
         </div>
         <Link href="/login" className="mx-4 mr-0 underline">
